@@ -27,7 +27,10 @@ Install the dependencies:
 pip install -r requirements.txt
 ```
 
-## Commands
+## Instructions
+
+
+### Inital Config
 
 You can generate listeners for the top ten currencies on [https://coinmarketcap.com](https://coinmarketcap.com/) by running:
 ```
@@ -40,7 +43,18 @@ You can specify a different threshold by running the command as such (in the cas
 python main.py generate_coins_config 5
 ```
 
+You can also modify the `coin-config.json` file and adjust the `min` and `max` values.
+
+### Running the notificatins
+
 You can start the listener by running:
 ```
 python main.py track_coins
 ```
+
+Clicking on the notification will direct you to the [Coinmarketcap](https://coinmarketcap.com/) page of the currency.
+
+## Screenshots:
+
+![alt text](https://github.com/RyanOM/coinPriceNotifications/blob/master/images/example.jpg "Example Bitcoin Notification")
+
