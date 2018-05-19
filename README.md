@@ -1,5 +1,6 @@
 # Coin Price Notifications
 Sends desktop notifications about the prices of crypto currencies, when their price is different than a fixed min or max price.
+Prices are retrieved from [Coinmarketcap](https://coinmarketcap.com/)
 
 
 ## Requirements:
