@@ -4,6 +4,8 @@ import time
 import requests
 import json
 
+import fire
+
 COINMARKETCAP_API_URL = "https://api.coinmarketcap.com/v2/ticker/?limit=10"
 COINMARKETCAP_API_URL_SINGLE_COIN = "https://api.coinmarketcap.com/v2/ticker/"
 
@@ -41,6 +43,9 @@ def generate_coins_config():
     with open('coin-config.json', 'w') as outfile:
         json.dump(coin_list, outfile, sort_keys=True, indent=4, ensure_ascii=False)
 
+    message = "\n".join(["%s: %s" % (c['symbol'], c['name']) for c in coin_list])
+    print("Generated coin-config.json for the following coins:\n\n" + message + "\n")
+
 
 def get_coin_current_price(coin_id):
     r = requests.get(COINMARKETCAP_API_URL_SINGLE_COIN + coin_id)
@@ -64,9 +69,10 @@ def compare_prices():
                     icon=coin['image'],
                     url=coin['website_url']
                 )
+                print("%s: %sUSD" % (coin['symbol'], coin_current_price))
 
 
-def main():
+def track_coins():
     notify(subtitle="Watching coins")
     schedule.every().minute.do(compare_prices)
 
@@ -78,4 +84,7 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    fire.Fire({
+      'track_coins': track_coins,
+      'generate_coins_config': generate_coins_config,
+    })
