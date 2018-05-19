@@ -1,6 +1,6 @@
 # Coin Price Notifications
 Sends desktop notifications about the prices of crypto currencies, when their price is different than a fixed min or max price.
-Prices are retrieved from [Coinmarketcap](https://coinmarketcap.com/)
+Prices are retrieved from [Coinmarketcap](https://coinmarketcap.com/) every minute.
 
 
 ## Requirements:
@@ -45,6 +45,7 @@ python main.py generate_coins_config 5
 ```
 
 You can also modify the `coin-config.json` file and adjust the `min` and `max` values.
+The `active` parameter can also be modified to `false` allowing the user not to receive notifications about the currency.  
 
 ### Running the notificatins
 
