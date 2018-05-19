@@ -17,7 +17,7 @@ def notify(title="💰", subtitle="", message="", icon=None, url=None):
     os.system(message)
 
 
-def generate_coins_config():
+def generate_coins_config(percent_difference=20):
     """
     Writes the basic config for the top 10 currencies from CoinMarketCap to config.json
     Sets a min and max at 20% difference from when the script was run
@@ -36,8 +36,8 @@ def generate_coins_config():
             "website_url": "https://coinmarketcap.com/currencies/%s/" % coin_data["website_slug"],
             "symbol": coin_data["symbol"],
             "active": True,
-            "max": coin_data['quotes']['USD']['price'] * 1.2,
-            "min": coin_data['quotes']['USD']['price'] * 0.8
+            "max": coin_data['quotes']['USD']['price'] * ((100+percent_difference)/100),
+            "min": coin_data['quotes']['USD']['price'] * ((100-percent_difference)/100)
         })
 
     with open('coin-config.json', 'w') as outfile:
