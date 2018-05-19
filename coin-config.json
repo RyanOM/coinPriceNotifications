@@ -1,0 +1,102 @@
+[
+    {
+        "active": true,
+        "coinmarketcap_id": "1",
+        "image": "https://s2.coinmarketcap.com/static/img/coins/32x32/1.png",
+        "max": 1372.267999999998,
+        "min": 1581.512,
+        "name": "Bitcoin",
+        "symbol": "BTC",
+        "website_url": "https://coinmarketcap.com/currencies/bitcoin/"
+    },
+    {
+        "active": true,
+        "coinmarketcap_id": "1027",
+        "image": "https://s2.coinmarketcap.com/static/img/coins/32x32/1027.png",
+        "max": 833.1696,
+        "min": 555.4464,
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "website_url": "https://coinmarketcap.com/currencies/ethereum/"
+    },
+    {
+        "active": true,
+        "coinmarketcap_id": "52",
+        "image": "https://s2.coinmarketcap.com/static/img/coins/32x32/52.png",
+        "max": 0.8065248,
+        "min": 0.5376832,
+        "name": "Ripple",
+        "symbol": "XRP",
+        "website_url": "https://coinmarketcap.com/currencies/ripple/"
+    },
+    {
+        "active": true,
+        "coinmarketcap_id": "1831",
+        "image": "https://s2.coinmarketcap.com/static/img/coins/32x32/1831.png",
+        "max": 1408.5,
+        "min": 939.0,
+        "name": "Bitcoin Cash",
+        "symbol": "BCH",
+        "website_url": "https://coinmarketcap.com/currencies/bitcoin-cash/"
+    },
+    {
+        "active": true,
+        "coinmarketcap_id": "1765",
+        "image": "https://s2.coinmarketcap.com/static/img/coins/32x32/1765.png",
+        "max": 15.64188,
+        "min": 10.42792,
+        "name": "EOS",
+        "symbol": "EOS",
+        "website_url": "https://coinmarketcap.com/currencies/eos/"
+    },
+    {
+        "active": true,
+        "coinmarketcap_id": "2",
+        "image": "https://s2.coinmarketcap.com/static/img/coins/32x32/2.png",
+        "max": 161.2044,
+        "min": 107.4696,
+        "name": "Litecoin",
+        "symbol": "LTC",
+        "website_url": "https://coinmarketcap.com/currencies/litecoin/"
+    },
+    {
+        "active": true,
+        "coinmarketcap_id": "2010",
+        "image": "https://s2.coinmarketcap.com/static/img/coins/32x32/2010.png",
+        "max": 0.2909112,
+        "min": 0.19394080000000002,
+        "name": "Cardano",
+        "symbol": "ADA",
+        "website_url": "https://coinmarketcap.com/currencies/cardano/"
+    },
+    {
+        "active": true,
+        "coinmarketcap_id": "512",
+        "image": "https://s2.coinmarketcap.com/static/img/coins/32x32/512.png",
+        "max": 0.3804648,
+        "min": 0.2536432,
+        "name": "Stellar",
+        "symbol": "XLM",
+        "website_url": "https://coinmarketcap.com/currencies/stellar/"
+    },
+    {
+        "active": true,
+        "coinmarketcap_id": "1720",
+        "image": "https://s2.coinmarketcap.com/static/img/coins/32x32/1720.png",
+        "max": 2.1048359999999997,
+        "min": 1.403224,
+        "name": "IOTA",
+        "symbol": "MIOTA",
+        "website_url": "https://coinmarketcap.com/currencies/iota/"
+    },
+    {
+        "active": true,
+        "coinmarketcap_id": "1958",
+        "image": "https://s2.coinmarketcap.com/static/img/coins/32x32/1958.png",
+        "max": 0.08237532,
+        "min": 0.05491688,
+        "name": "TRON",
+        "symbol": "TRX",
+        "website_url": "https://coinmarketcap.com/currencies/tron/"
+    }
+]
